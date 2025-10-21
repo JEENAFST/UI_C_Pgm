@@ -85,7 +85,7 @@ void show_temperature() {
     while (1) {
         clear();
         attron(COLOR_PAIR(2) | A_BOLD);
-        mvprintw(2, 12, "🌡️  TEMPERATURE SENSOR DASHBOARD");
+        mvprintw(2, 12, "  TEMPERATURE SENSOR DASHBOARD");
         attroff(COLOR_PAIR(2) | A_BOLD);
 
         temp = 20 + rand() % 15 + (rand() % 100) / 100.0;
@@ -117,7 +117,7 @@ void show_pressure() {
     while (1) {
         clear();
         attron(COLOR_PAIR(3) | A_BOLD);
-        mvprintw(2, 12, "⛽ PRESSURE SENSOR DASHBOARD");
+        mvprintw(2, 12, " PRESSURE SENSOR DASHBOARD");
         attroff(COLOR_PAIR(3) | A_BOLD);
 
         pressure = 900 + rand() % 200 + (rand() % 100) / 100.0;
@@ -136,3 +136,4 @@ void show_pressure() {
         }
     }
 }
+
